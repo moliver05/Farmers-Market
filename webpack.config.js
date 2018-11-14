@@ -40,16 +40,12 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(png|jpg|jpeg)$/,
         loader: 'url-loader?limit=8192'
       },
       {
         test: /\.css$/,
-        loader: 'css-loader',
-        query: {
-          modules: true,
-          localIdentName: '[name]__[local]___[hash:base64:5]'
-        }
+        loader: ['style-loader', 'css-loader']
       }
     ],
   },

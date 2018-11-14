@@ -6,18 +6,19 @@ function TopNav(){
         width: "1100px",
         fontSize: "25px", 
         justifyContent: "space-between",
-        border: "10px solid black",
+        border: "10px solid gold",
         opacity: ".5",
-        paddingBottom: "15px"
+        paddingBottom: "15px",
+        marginTop: "35px"
     }
     var headStyles = {
         textAlign: "center",
-        color: "Teal"
+        color: "Green"
     }
     return (
       <div style={styles}>
           <div style={headStyles}>
-            Exercise
+           What's Goods Market
           </div>
       </div>
   

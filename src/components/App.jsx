@@ -1,10 +1,13 @@
 import React from "react";
-import TicketList from "./TicketList"
-import Ticket from "./Ticket"
+import FarmerList from "./FarmerList"
+import Goods from "./Goods"
 import TopNav from "./Topnav"
+import NewGoods from "./NewGoods"
+import { Switch, Route } from 'react-router-dom';
+import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+var image = require("../img/wallpaper.jpeg");
+
 //import PropTypes from "prop-types";
-
-
 
 function App(){
   var styles = {
@@ -12,14 +15,25 @@ function App(){
     marginRight: "auto",
     marginLeft: "auto",
   }
+  var bodyStyle = {
+    border: "2px solid orange",
+    padding: "50px",
+    backgroundImage: "url("+image+")",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    color: "orange",
+    marginTop: "50px"
+  }
   return (
     <div style={styles}>
     <TopNav />
-    <div style={styles}>
-    <br/>
-      <TicketList />
+    <div style={bodyStyle}>
+    <Switch>
+    <Route exact path='/' component={FarmerList} />
+    <Route path='/newgoods' component={NewGoods} />
+    </Switch>
       </div>
-    </div>
+       </div>
   );
 }
 
