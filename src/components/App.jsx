@@ -1,28 +1,18 @@
 import React from "react";
+import TicketList from "./TicketList"
+import Ticket from "./Ticket"
 //import PropTypes from "prop-types";
-import TopNav from "./TopNav";
+
 
 
 function App(){
   var styles = {
-    width: "1100px",
-    marginRight: "auto",
-    marginLeft: "auto",
-  }
-  var layout = {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "flex-start",
   }
   return (
     <div style={styles}>
-      <TopNav />
-      <div style={layout}>
-       
+    ] <Ticket />
+      <TicketList />
       </div>
-
-      social-media-clone
-    </div>
   );
 }
 
