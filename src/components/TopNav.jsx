@@ -9,16 +9,17 @@ function TopNav(){
         border: "10px solid gold",
         opacity: ".5",
         paddingBottom: "15px",
-        marginTop: "35px"
+        backgroundColor: "skyblue",
+        marginTop: "10px"
     }
     var headStyles = {
         textAlign: "center",
-        color: "Green"
+        color: "red"
     }
     return (
       <div style={styles}>
           <div style={headStyles}>
-           What's Goods Market
+          $$ DA PLUG $$
           </div>
       </div>
   
