@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-
-function Goods(props) {
+function Schedule(props) {
 
   return (
     <div>
@@ -11,13 +10,13 @@ function Goods(props) {
         <div className="panel-heading">
         <hr/>
         <br/>
-          <h3 className="panel-title">{props.kind}</h3>
+          <h3 className="panel-title">{props.season}</h3>
         </div>
         <br/>
         <div className="panel body">
           <ul>
-            <li>{props.name}</li>
-            <li>{props.price}</li>
+            <li>{props.place}</li>
+            <li>{props.time}</li>
           </ul>
         </div>
       </div>
@@ -25,10 +24,10 @@ function Goods(props) {
   );
 }
 
-Goods.propTypes = {
-  name: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  kind: PropTypes.string.isRequired
+Schedule.propTypes = {
+  season: PropTypes.string.isRequired,
+  place: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired
 };
 
-export default Goods;
+export default Schedule;

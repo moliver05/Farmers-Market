@@ -1,27 +1,42 @@
-
+import PropTypes from "prop-types";
 import React from 'react';
+import Goods from "./Goods"
 
-function NewGoods(){
+function NewGoods() {
   return (
     <div>
       <form>
+        <label>Name</label><input
+          type='text'
+          placeholder='product name' />
+        <br />
+        <hr />
+
+        <label>Price</label>
+        <input
+          placeholder='$$' />
+        <br />
+        <hr />
+
+        <label>Location</label>
         <input
           type='text'
-          id='name'
-          placeholder='Pair Names'/>
+          placeholder='address' />
+        <br />
+        <hr />
 
+        <label>Kind</label>
         <input
           type='text'
-          id='location'
-          placeholder='Location'/>
+          placeholder='fruits, veggies, etc' />
 
-        <input
-          id='price'
-          placeholder='How Much.'/>
-        <button type='submit'>Help!</button>
+
+        <br />
+        <button className="btn btn-success" type='submit'>ADD!</button>
       </form>
     </div>
   );
 }
+
 
 export default NewGoods;

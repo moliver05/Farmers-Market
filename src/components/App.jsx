@@ -1,10 +1,13 @@
 import React from "react";
-import FarmerList from "./FarmerList"
-import Goods from "./Goods"
-import TopNav from "./Topnav"
+import FarmerList from "./FarmerList";
+import Goods from "./Goods";
+import TopNav from "./Topnav";
 import NewGoods from "./NewGoods"
 import { Switch, Route } from 'react-router-dom';
 import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Header from "./Header";
+import SeasonList from "./SeasonList";
+import Schedule from "./Schedule";
 var image = require("../img/wallpaper.jpeg");
 
 //import PropTypes from "prop-types";
@@ -27,10 +30,12 @@ function App(){
   return (
     <div style={styles}>
     <TopNav />
+    <Header />
     <div style={bodyStyle}>
     <Switch>
     <Route exact path='/' component={FarmerList} />
     <Route path='/newgoods' component={NewGoods} />
+    <Route path='/schedule' component={SeasonList} />
     </Switch>
       </div>
        </div>
